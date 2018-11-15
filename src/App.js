@@ -2,8 +2,14 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Arnold from './Arnold';
+import ReactAudioPlayer from 'react-audio-player';
 
 class App extends Component {
+
+  handleClick() {
+    console.log('this is:', this);
+  }
+
   render() {
     return (
       <div className="App">
@@ -12,10 +18,8 @@ class App extends Component {
             {Arnold.responses.map(sound => {
               return (
               <div key={sound.name}>
-              <audio controls>
-                <source src='./sounds/responses/cop.wav' type="audio/wav"></source>
-              </audio>
-              <p>{sound.caption}</p>
+                  <audio id="damn" src="./sounds/responses/choir_boy.mp3" preload="auto"></audio>
+                    <button onclick='document.getElementById("damn").play()'>{sound.caption}</button>
               </div>
               )
             })}

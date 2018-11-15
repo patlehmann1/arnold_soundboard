@@ -2,7 +2,7 @@ const Arnold = {
     "responses": [
         {
             "name": "im_a_cop",
-            "wavFile": "./sounds/responses/cop.wav",
+            "wavFile": "/sounds/responses/cop.wav",
             "caption": "I'm a cop you idiot!"
         },
         {
@@ -73,7 +73,7 @@ const Arnold = {
         {
             "name": "fu_asshole",
             "wavFile": "./sounds/responses/t1_fu.wav",
-            "caption": "Fuck you, asshole"
+            "caption": "F you, a-hole"
         },
         {
             "name": "you_are_mine",
@@ -119,6 +119,16 @@ const Arnold = {
             "name": "why_not",
             "wavFile": "./sounds/responses/why_not.wav",
             "caption": "Why not?"
+        },
+        {
+            "name": "f_with_me",
+            "wavFile": "./sounds/responses/f_with_me.mp3",
+            "caption": "You want to F with me?"
+        },
+        {
+            "name": "choir_boy",
+            "wavFile": "./sounds/responses/choir_boy.mp3",
+            "caption": "F'ing choir boy compared to me"
         }
     ],
     "openers_questions": [
